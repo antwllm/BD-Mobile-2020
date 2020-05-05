@@ -13,7 +13,7 @@ import Firebase
 extension String {
     
     func clean() -> String {
-        return self.folding(options: .diacriticInsensitive, locale: .current)
+        return self.folding(options: [.diacriticInsensitive, .caseInsensitive], locale: .current)
     }
 }
 
